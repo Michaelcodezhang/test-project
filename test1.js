@@ -3,5 +3,12 @@
  */
 function fun1()
 {
-    alert("ok");
+    var stringValue="I love my country very much";
+    var positions=new Array();
+    var pos=stringValue.indexOf("y");
+    while(pos>-1){
+        positions.push(pos);
+        pos=stringValue.indexOf("y",pos+1);
+    }
+    alert(positions);
 }
